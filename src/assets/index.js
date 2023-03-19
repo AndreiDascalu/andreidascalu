@@ -1,3 +1,5 @@
+import black_logo from "./black_logo.svg";
+import white_logo from "./white_logo.svg";
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -31,6 +33,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  white_logo,
+  black_logo,
   logo,
   backend,
   creator,
