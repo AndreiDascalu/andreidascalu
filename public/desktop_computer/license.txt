@@ -1,0 +1,11 @@
+Model Information:
+* title:	desktop computer
+* source:	https://sketchfab.com/3d-models/desktop-computer-89f5bca8380d442687ccc0c1e970d75d
+* author:	lexpartizan (https://sketchfab.com/lexpartizan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "desktop computer" (https://sketchfab.com/3d-models/desktop-computer-89f5bca8380d442687ccc0c1e970d75d) by lexpartizan (https://sketchfab.com/lexpartizan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
