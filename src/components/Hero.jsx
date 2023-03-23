@@ -44,7 +44,7 @@ const Hero = () => {
         className="absolute xs:bottom-10 bottom-32 w-full flex
                       justify-center items-center"
       >
-        <a href="about">
+        <a href="#about">
           <div
             className="w-[35px] h-[64px] rounded-3xl border-4
                           border-secondarry flex justify-center
@@ -58,7 +58,7 @@ const Hero = () => {
                 repeatType: "loop",
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
-            ></motion.div>
+            />
           </div>
         </a>
       </div>
