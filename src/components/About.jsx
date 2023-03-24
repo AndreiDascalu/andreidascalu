@@ -42,7 +42,7 @@ const About = () => {
       >
         I am proficient in several popular programming languages, including
         Java, C++, Scala, Python, and JavaScript, and I am well-versed in
-        several widely-used framewqorks such as Spring Boot, Node.js, and
+        several widely-used frameworks such as Spring Boot, Node.js, and
         React.js. In addition to my strong coding skills, I also have experience
         with a variety of development tools, including Git for version control,
         Postman for API testing, and PostgreSQL for database management.
