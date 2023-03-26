@@ -23,6 +23,7 @@ import {
     annispizzagif,
     tripguide,
     threejs,
+    raytracergif,
   } from "../assets";
   
   export const navLinks = [
@@ -174,7 +175,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: raytracergif,
       source_code_link: "https://github.com/",
     },
   ];

@@ -34,7 +34,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import raytracergif from "./raytracergif.gif"
 import annispizzagif from "./annispizzagif.gif"
 import ooppgif from"./ooppgif.gif"
 import carrent from "./carrent.png";
@@ -81,4 +81,5 @@ export {
   postgresql,
   scala,
   python,
+  raytracergif,
 };
