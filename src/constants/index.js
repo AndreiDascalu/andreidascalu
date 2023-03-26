@@ -1,12 +1,17 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
-    typescript,
+    java,
+    scala,
+    postgresql,
+    python,
+    cplusplus,
     html,
     css,
+    postman, 
+    springboot,
     reactjs,
     redux,
     tailwind,
@@ -14,13 +19,8 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
+    ooppgif,
+    annispizzagif,
     tripguide,
     threejs,
   } from "../assets";
@@ -58,16 +58,24 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
       name: "JavaScript",
       icon: javascript,
+    },
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Scala",
+      icon: scala,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "C++",
+      icon: cplusplus,
     },
     {
       name: "React JS",
@@ -78,12 +86,16 @@ import {
       icon: tailwind,
     },
     {
+      name: "Spring Boot",
+      icon: springboot,
+    },
+    {
       name: "Node JS",
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "PostgreSQL",
+      icon: postgresql,
     },
     {
       name: "Three JS",
@@ -94,152 +106,71 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Postman",
+      icon: postman,
     },
+    
 
-  ];
-  
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Quizzzz!",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Multiplayer educational game that tests knowledge of energy consumption through a series of multiple-choice questions. Players earn points for correct answers, with each level having an increased difficulty.",
       tags: [
         {
-          name: "react",
+          name: "spring",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "h2db",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "javafx",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: ooppgif,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Anni's Pizza",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "User friendly back-end ordering system application created in Java. Used to manage order creation, restaurant menu updates, regional chain management, client authentication and manager actions. ",
       tags: [
         {
-          name: "react",
+          name: "spring",
           color: "blue-text-gradient",
+        },
+        {
+          name: "h2db",
+          color: "green-text-gradient",
         },
         {
           name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: annispizzagif,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Recursive raytracer",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Ray tracer built in C++, adapting functionalities such as shadows, area lights, texture filtering, depth of field and acceleration data structures in order to build a fully functional raytracing application.",
       tags: [
         {
-          name: "nextjs",
+          name: "opengl",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mingw",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "c++",
           color: "pink-text-gradient",
         },
       ],
@@ -248,4 +179,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, projects };
