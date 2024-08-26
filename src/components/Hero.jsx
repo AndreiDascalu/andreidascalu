@@ -32,7 +32,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className={`${styles.heroSubText} mt-1 text-white-100`}>
-            Computer Science and Engineering undergraduate at TU Delft,
+            Computer Science and Engineering graduate at TU Delft,
             <br className="sm:block hidden" /> dedicated to exploring innovative
             technologies
           </p>
