@@ -36,12 +36,13 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import raytracergif from "./raytracergif.gif"
 import annispizzagif from "./annispizzagif.gif"
+import strawberrygif from "./strawberrygif.gif"
 import ooppgif from"./ooppgif.gif"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-export {
+export {strawberrygif,
   white_logo,
   black_logo,
   logo,

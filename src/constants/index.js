@@ -20,6 +20,7 @@ import {
   git,
   figma,
   ooppgif,
+  strawberrygif,
   annispizzagif,
   tripguide,
   threejs,
@@ -130,7 +131,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: ooppgif,
+    image: strawberrygif,
     source_code_link: "https://github.com/",
   },
   {
