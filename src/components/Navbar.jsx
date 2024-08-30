@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close, white_logo, black_logo } from "../assets";
 import cvFile from "../assets/Andrei Dascalu - CV.pdf";
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -57,6 +58,23 @@ const Navbar = () => {
           >
             <a href={cvFile} download>
               CV
+            </a>
+          </li>
+
+          <li
+            className={`${
+              active === "LinkedIn" ? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer flex items-center`}
+          >
+            <a
+              href="https://www.linkedin.com/in/andrei-dascalu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <FaLinkedin className="mr-2" />{" "}
+              {/* Icon with some right margin */}
+              LinkedIn
             </a>
           </li>
         </ul>
