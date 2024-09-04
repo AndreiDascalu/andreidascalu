@@ -3,11 +3,17 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
+const Computers = ({ isMobile, onModelLoaded }) => {
   const [rotation, setRotation] = useState([-0.15, 0, -0.3]);
-  const computer = useGLTF("./gaming_laptop/scene.gltf");
+  const { scene } = useGLTF("./gaming_laptop/scene.gltf");
 
-  // Rotate the laptop on each frame
+  useEffect(() => {
+    if (scene) {
+      // Notify that the model is loaded
+      onModelLoaded();
+    }
+  }, [scene, onModelLoaded]);
+
   const onFrame = (e) => {
     setRotation([rotation[0], rotation[1] + 0.001, rotation[2]]);
   };
@@ -23,7 +29,7 @@ const Computers = ({ isMobile }) => {
         intensity={0.6}
       />
       <primitive
-        object={computer.scene}
+        object={scene}
         scale={isMobile ? 0.8 : 1}
         position={[0, -2.7, 0]}
         rotation={rotation}
@@ -32,7 +38,7 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const ComputersCanvas = () => {
+const ComputersCanvas = ({ onModelLoaded }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -63,7 +69,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={isMobile} onModelLoaded={onModelLoaded} />
       </Suspense>
       <Preload all />
     </Canvas>

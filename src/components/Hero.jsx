@@ -1,20 +1,20 @@
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const [modelLoaded, setModelLoaded] = useState(false);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px]
         max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
-        <div
-          className="flex flex-col justify-center
-          items-center mt-5"
-        >
+        <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm: h-80 h-40 violet-gradient" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div>
@@ -38,8 +38,48 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
 
+      {/* 3D Computer Canvas */}
+      <ComputersCanvas onModelLoaded={() => setModelLoaded(true)} />
+
+      {/* Loading Message and Left-to-Right Arrow */}
+      {!modelLoaded && (
+        <motion.div
+          initial={{ opacity: 1 }}
+          animate={{ opacity: modelLoaded ? 0 : 1 }}
+          transition={{ duration: 1.5 }}
+          className="absolute top-[40%] left-[25%] flex flex-col items-center space-y-2"
+        >
+          <p className="text-white bg-black/70 p-2 rounded-md text-center text-sm">
+            3D models can be quite heavy, please wait 🙏
+          </p>
+          <motion.div
+            animate={{ x: [0, 10, 0] }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              className="w-6 h-6 text-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 12h12M12 6l6 6-6 6" // Arrow path
+              />
+            </svg>
+          </motion.div>
+        </motion.div>
+      )}
+
+      {/* Scroll Indicator */}
       <div
         className="absolute xs:bottom-10 bottom-32 w-full flex
                       justify-center items-center"
@@ -47,7 +87,7 @@ const Hero = () => {
         <a href="#about">
           <div
             className="w-[35px] h-[64px] rounded-3xl border-4
-                          border-secondarry flex justify-center
+                          border-secondary flex justify-center
                           items-start p-2"
           >
             <motion.div
